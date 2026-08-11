@@ -14,7 +14,7 @@ VECTOR_DB = "vectordb"
 def get_embeddings(provider = "OpenAI"):
     if provider == "Gemini":
         return GoogleGenerativeAIEmbeddings(
-            model = "models/embedding-001"
+            model = "models/gemini-embedding-001"
         )
     else:
         return OpenAIEmbeddings(
