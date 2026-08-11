@@ -31,7 +31,7 @@ def ask_openai(
 # Gemini
 def ask_gemini(
         prompt,
-        model = "gemini-2.5-flash",
+        model = "gemini-3.6-flash",
         temperature = 0.3
 ):
     """
@@ -63,7 +63,7 @@ def get_response(
     elif provider == "Gemini":
         return ask_gemini(
             prompt=prompt,
-            
+
             temperature=temperature
         )
     else:
