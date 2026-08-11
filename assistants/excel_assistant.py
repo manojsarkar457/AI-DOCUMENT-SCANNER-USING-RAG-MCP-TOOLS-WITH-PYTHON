@@ -1,19 +1,11 @@
 import streamlit as st
 
-print("1. excel_assistant.py started")
-
 from utils.file_manager import save_upload_files
-print("2. file_manager imported")
+from utils.chat_history import (add_messages, display_chat)
 
-from utils.chat_history import add_messages, display_chat
-print("3. chat_history imported")
-
-from mcp_tools.excel_tool import process_excel, ask_excel
-print("4. excel_tool imported")
+from mcp_tools.excel_tool import (process_excel, ask_excel)
 
 def excel_assistant(model):
-    print("5. excel_assistant function called")
-
     st.header("📊 Excel  Assistant")
     uploaded_files = st.file_uploader("Upload Excel Files", type=["xlsx", "xls"], accept_multiple_files=True, key="excel_uploader")
 
