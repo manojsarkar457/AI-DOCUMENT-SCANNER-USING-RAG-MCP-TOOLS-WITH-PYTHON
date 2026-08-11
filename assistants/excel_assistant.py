@@ -1,9 +1,8 @@
 import streamlit as st
 
 from utils.file_manager import save_upload_files
-from utils.chat_history import (add_messages, display_chat)
-
-from mcp_tools.excel_tool import (process_excel, ask_excel)
+from utils.chat_history import add_messages, display_chat
+from mcp_tools.excel_tool import process_excel, ask_excel
 
 def excel_assistant(model):
     st.header("📊 Excel  Assistant")
