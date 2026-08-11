@@ -1,9 +1,4 @@
-import os
 import streamlit as st
-from dotenv import load_dotenv
-
-# Load Environment Variables
-load_dotenv()
 
 # Import Assistants
 from assistants.pdf_assistant import pdf_assistant
