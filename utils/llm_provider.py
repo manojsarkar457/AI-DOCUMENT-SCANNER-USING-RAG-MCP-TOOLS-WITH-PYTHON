@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 from google import genai
+import streamlit as st
 
 load_dotenv()
 
@@ -15,7 +16,7 @@ def ask_openai(
     Return OpenAI Chat Model
     """
 
-    client = OpenAI(api_key = os.getenv("OPENAI_API_KEY"))
+    client = OpenAI(api_key = st.secreats['OPENAI_API_KEY'])
     response = client.chat.completions.create(
         model = model,
         temperature = temperature,
@@ -37,7 +38,7 @@ def ask_gemini(
     """
     Send prompt to Gemini.
     """
-    client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
+    client = genai.Client(api_key=st.secrets['GOOGLE_API_KEY'])
     response = client.models.generate_content(
         model = model,
         contents = prompt,
