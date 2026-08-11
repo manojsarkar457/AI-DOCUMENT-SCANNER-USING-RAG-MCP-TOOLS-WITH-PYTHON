@@ -32,7 +32,7 @@ def ask_openai(
 # Gemini
 def ask_gemini(
         prompt,
-        model = "gemini-3.6-flash",
+        model = "gemini-3.5-flash",
         temperature = 0.3
 ):
     """
