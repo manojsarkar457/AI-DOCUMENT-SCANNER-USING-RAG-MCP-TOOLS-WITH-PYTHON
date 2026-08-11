@@ -16,7 +16,7 @@ def ask_openai(
     Return OpenAI Chat Model
     """
 
-    client = OpenAI(api_key = st.secreats['OPENAI_API_KEY'])
+    client = OpenAI(api_key = st.secrets['OPENAI_API_KEY'])
     response = client.chat.completions.create(
         model = model,
         temperature = temperature,
