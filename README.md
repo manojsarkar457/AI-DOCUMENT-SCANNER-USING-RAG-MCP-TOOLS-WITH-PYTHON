@@ -503,7 +503,3 @@ Interested in **Python, Generative AI, Agentic AI, RAG, MCP, and AI-powered appl
 If you find this project useful, consider giving the repository a ⭐ on GitHub.
 
 ---
-
-## 📄 License
-
-This project is intended for educational and development purposes. Add an appropriate license file if you plan to distribute or reuse the project publicly.
